@@ -1,0 +1,10 @@
+com\aegis\portal\util\IConstants.class
+com\aegis\portal\model\EventsDTO.class
+com\aegis\portal\model\PortalGroup.class
+com\aegis\portal\okta\OktaService.class
+com\aegis\portal\migration\UserSync.class
+com\aegis\portal\util\CommonUtil.class
+com\aegis\portal\db\DBService.class
+com\aegis\portal\model\PortalUser.class
+com\aegis\portal\db\DBConnection.class
+com\aegis\portal\App.class

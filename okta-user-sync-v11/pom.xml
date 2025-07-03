@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.aegis.portal</groupId>
+	<artifactId>okta-user-sync-v11</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>okta-aegislink-sync-prod</name>
+
+	<properties>
+		<okta.version>4.0.0</okta.version>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<!-- Okta SDK Core -->
+		<dependency>
+			<groupId>com.okta.sdk</groupId>
+			<artifactId>okta-sdk-api</artifactId>
+			<version>${okta.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.okta.sdk</groupId>
+			<artifactId>okta-sdk-impl</artifactId>
+			<version>${okta.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.okta.sdk</groupId>
+			<artifactId>okta-sdk-httpclient</artifactId>
+			<version>${okta.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- Oracle JDBC -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>23.2.0.0</version>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+
+		<!-- JSON Parsing -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+</project>

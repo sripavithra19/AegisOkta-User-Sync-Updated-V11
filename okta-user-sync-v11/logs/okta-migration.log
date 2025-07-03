@@ -1,0 +1,2081 @@
+[INFO ] 2025-06-27 22:33:35.835 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-27 22:33:35.836 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-06-30 13:26:14.999 [main] UserSync - Invalid Arguments. Required Portal Environment and Okta Environment
+[INFO ] 2025-06-30 13:28:42.567 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:28:42.568 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:31:07.570 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:31:07.572 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:42:06.166 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:42:06.167 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:42:07.969 [main] OktaService - ✅ Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:42:07.970 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:42:08.346 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@52a36910
+[INFO ] 2025-06-30 13:42:08.539 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@31d6f3fe
+[INFO ] 2025-06-30 13:42:08.546 [main] DBService - ✅ User inserted: testing1okta@gmail.com
+[INFO ] 2025-06-30 13:42:08.568 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@20a05b32
+[ERROR] 2025-06-30 13:42:08.578 [main] DBService - ❌ Failed to insert event: 00us9p9kxtMmaWiAv697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:08.605 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3db663d0
+[INFO ] 2025-06-30 13:42:08.634 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@10895b16
+[INFO ] 2025-06-30 13:42:08.636 [main] DBService - ✅ User inserted: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 13:42:08.660 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@497aec8c
+[ERROR] 2025-06-30 13:42:08.663 [main] DBService - ❌ Failed to insert event: 00us64y2b4gxkuSfY697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:08.685 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@336880df
+[INFO ] 2025-06-30 13:42:08.705 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@38af1bf6
+[INFO ] 2025-06-30 13:42:08.708 [main] DBService - ✅ User inserted: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 13:42:08.730 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@7f08caf
+[ERROR] 2025-06-30 13:42:08.733 [main] DBService - ❌ Failed to insert event: 00us8vxumnY8nC6Zb697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:08.755 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@72725ee1
+[INFO ] 2025-06-30 13:42:08.775 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@61f39bb
+[INFO ] 2025-06-30 13:42:08.777 [main] DBService - ✅ User inserted: againtesting1993@gmail.com
+[INFO ] 2025-06-30 13:42:08.798 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@2d0ecb24
+[ERROR] 2025-06-30 13:42:08.800 [main] DBService - ❌ Failed to insert event: 00us9pwpcru4OmDcD697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:08.822 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@7e00ed0f
+[INFO ] 2025-06-30 13:42:08.841 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@5fbdc49b
+[INFO ] 2025-06-30 13:42:08.843 [main] DBService - ✅ User inserted: test2testingokta@gmail.com
+[INFO ] 2025-06-30 13:42:08.861 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3baf6936
+[ERROR] 2025-06-30 13:42:08.862 [main] DBService - ❌ Failed to insert event: 00us65er5oUJIbAu8697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:08.881 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4eed2acf
+[INFO ] 2025-06-30 13:42:08.899 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@61d84e08
+[INFO ] 2025-06-30 13:42:08.901 [main] DBService - ✅ User inserted: test1testingokta@gmail.com
+[ERROR] 2025-06-30 13:42:08.909 [main] DBConnection - Exception in DB getConnection::ORA-12519: TNS:no appropriate service handler found (CONNECTION_ID=LzlQxddrSf6IPUAKs9BLlg==)
+[ERROR] 2025-06-30 13:42:08.910 [main] DBService - ❌ Failed to insert event: 00us65getdK37RHAR697
+java.sql.SQLException: Exception in DB getConnection::ORA-12519: TNS:no appropriate service handler found (CONNECTION_ID=LzlQxddrSf6IPUAKs9BLlg==)
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:72) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:57) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+[INFO ] 2025-06-30 13:42:08.911 [main] CommonUtil - Last Sync date is updated to 2025-06-30 13:42:08
+[INFO ] 2025-06-30 13:42:08.911 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 13:42:20.117 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:42:20.118 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:42:21.883 [main] OktaService - ✅ Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:42:21.883 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:42:22.235 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3a095ec0
+[INFO ] 2025-06-30 13:42:22.413 [main] UserSync - User already exists, skipping: testing1okta@gmail.com
+[INFO ] 2025-06-30 13:42:22.438 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@760cf594
+[ERROR] 2025-06-30 13:42:22.443 [main] DBService - ❌ Failed to insert event: 00us9p9kxtMmaWiAv697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.476 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e141e42
+[INFO ] 2025-06-30 13:42:22.478 [main] UserSync - User already exists, skipping: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 13:42:22.499 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@73fc518f
+[ERROR] 2025-06-30 13:42:22.501 [main] DBService - ❌ Failed to insert event: 00us64y2b4gxkuSfY697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.530 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@2cc03cd1
+[INFO ] 2025-06-30 13:42:22.532 [main] UserSync - User already exists, skipping: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 13:42:22.552 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4e6f2bb5
+[ERROR] 2025-06-30 13:42:22.554 [main] DBService - ❌ Failed to insert event: 00us8vxumnY8nC6Zb697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.578 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6cd166b8
+[INFO ] 2025-06-30 13:42:22.581 [main] UserSync - User already exists, skipping: againtesting1993@gmail.com
+[INFO ] 2025-06-30 13:42:22.603 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@7be7e15
+[ERROR] 2025-06-30 13:42:22.605 [main] DBService - ❌ Failed to insert event: 00us9pwpcru4OmDcD697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.625 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@24b4d544
+[INFO ] 2025-06-30 13:42:22.628 [main] UserSync - User already exists, skipping: test2testingokta@gmail.com
+[INFO ] 2025-06-30 13:42:22.647 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3f9270ed
+[ERROR] 2025-06-30 13:42:22.649 [main] DBService - ❌ Failed to insert event: 00us65er5oUJIbAu8697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.669 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@53a665ad
+[INFO ] 2025-06-30 13:42:22.671 [main] UserSync - User already exists, skipping: test1testingokta@gmail.com
+[INFO ] 2025-06-30 13:42:22.689 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@51b35e4e
+[ERROR] 2025-06-30 13:42:22.691 [main] DBService - ❌ Failed to insert event: 00us65getdK37RHAR697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:42:22.694 [main] CommonUtil - Last Sync date is updated to 2025-06-30 13:42:22
+[INFO ] 2025-06-30 13:42:22.695 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 13:43:50.798 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:43:50.799 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:43:52.447 [main] OktaService - ✅ Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:43:52.447 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:43:52.804 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3a095ec0
+[INFO ] 2025-06-30 13:43:52.959 [main] UserSync - User already exists, skipping: testing1okta@gmail.com
+[INFO ] 2025-06-30 13:43:52.980 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@760cf594
+[ERROR] 2025-06-30 13:43:52.983 [main] DBService - ❌ Failed to insert event: 00us9p9kxtMmaWiAv697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.008 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e141e42
+[INFO ] 2025-06-30 13:43:53.010 [main] UserSync - User already exists, skipping: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 13:43:53.031 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@73fc518f
+[ERROR] 2025-06-30 13:43:53.033 [main] DBService - ❌ Failed to insert event: 00us64y2b4gxkuSfY697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.059 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@2cc03cd1
+[INFO ] 2025-06-30 13:43:53.061 [main] UserSync - User already exists, skipping: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 13:43:53.080 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4e6f2bb5
+[ERROR] 2025-06-30 13:43:53.083 [main] DBService - ❌ Failed to insert event: 00us8vxumnY8nC6Zb697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.104 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6cd166b8
+[INFO ] 2025-06-30 13:43:53.106 [main] UserSync - User already exists, skipping: againtesting1993@gmail.com
+[INFO ] 2025-06-30 13:43:53.122 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@7be7e15
+[ERROR] 2025-06-30 13:43:53.125 [main] DBService - ❌ Failed to insert event: 00us9pwpcru4OmDcD697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.146 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@24b4d544
+[INFO ] 2025-06-30 13:43:53.147 [main] UserSync - User already exists, skipping: test2testingokta@gmail.com
+[INFO ] 2025-06-30 13:43:53.166 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3f9270ed
+[ERROR] 2025-06-30 13:43:53.167 [main] DBService - ❌ Failed to insert event: 00us65er5oUJIbAu8697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.191 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@53a665ad
+[INFO ] 2025-06-30 13:43:53.193 [main] UserSync - User already exists, skipping: test1testingokta@gmail.com
+[INFO ] 2025-06-30 13:43:53.209 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@51b35e4e
+[ERROR] 2025-06-30 13:43:53.211 [main] DBService - ❌ Failed to insert event: 00us65getdK37RHAR697
+java.sql.SQLSyntaxErrorException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:71) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "EMAIL": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 15 more
+[INFO ] 2025-06-30 13:43:53.214 [main] CommonUtil - Last Sync date is updated to 2025-06-30 13:43:53
+[INFO ] 2025-06-30 13:43:53.215 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 13:50:19.920 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:50:19.921 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:50:21.698 [main] OktaService - ✅ Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:50:21.699 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:50:22.051 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@52a36910
+[INFO ] 2025-06-30 13:50:22.196 [main] UserSync - User already exists, skipping: testing1okta@gmail.com
+[INFO ] 2025-06-30 13:50:22.217 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@31d6f3fe
+[INFO ] 2025-06-30 13:50:22.244 [main] DBService - ✅ Event inserted: 00us9p9kxtMmaWiAv697
+[INFO ] 2025-06-30 13:50:22.266 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@20a05b32
+[INFO ] 2025-06-30 13:50:22.268 [main] UserSync - User already exists, skipping: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 13:50:22.288 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@e4b6f47
+[INFO ] 2025-06-30 13:50:22.291 [main] DBService - ✅ Event inserted: 00us64y2b4gxkuSfY697
+[INFO ] 2025-06-30 13:50:22.312 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4aedaf61
+[INFO ] 2025-06-30 13:50:22.315 [main] UserSync - User already exists, skipping: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 13:50:22.339 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1dc76fa1
+[INFO ] 2025-06-30 13:50:22.343 [main] DBService - ✅ Event inserted: 00us8vxumnY8nC6Zb697
+[INFO ] 2025-06-30 13:50:22.366 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@62d73ead
+[INFO ] 2025-06-30 13:50:22.368 [main] UserSync - User already exists, skipping: againtesting1993@gmail.com
+[INFO ] 2025-06-30 13:50:22.391 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3db663d0
+[INFO ] 2025-06-30 13:50:22.394 [main] DBService - ✅ Event inserted: 00us9pwpcru4OmDcD697
+[INFO ] 2025-06-30 13:50:22.414 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@5524b72f
+[INFO ] 2025-06-30 13:50:22.416 [main] UserSync - User already exists, skipping: test2testingokta@gmail.com
+[INFO ] 2025-06-30 13:50:22.436 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3b9632d1
+[INFO ] 2025-06-30 13:50:22.438 [main] DBService - ✅ Event inserted: 00us65er5oUJIbAu8697
+[INFO ] 2025-06-30 13:50:22.458 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@336880df
+[INFO ] 2025-06-30 13:50:22.461 [main] UserSync - User already exists, skipping: test1testingokta@gmail.com
+[INFO ] 2025-06-30 13:50:22.483 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@38af1bf6
+[INFO ] 2025-06-30 13:50:22.496 [main] DBService - ✅ Event inserted: 00us65getdK37RHAR697
+[INFO ] 2025-06-30 13:50:22.498 [main] CommonUtil - Last Sync date is updated to 2025-06-30 13:50:22
+[INFO ] 2025-06-30 13:50:22.499 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 13:52:54.777 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 13:52:54.782 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 13:52:56.533 [main] OktaService - ✅ Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:52:56.534 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 13:52:56.863 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3a095ec0
+[INFO ] 2025-06-30 13:52:56.983 [main] UserSync - User already exists, skipping: testing1okta@gmail.com
+[INFO ] 2025-06-30 13:52:57.000 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@760cf594
+[INFO ] 2025-06-30 13:52:57.009 [main] DBService - ✅ Event inserted: 00us9p9kxtMmaWiAv697
+[INFO ] 2025-06-30 13:52:57.031 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@165e389b
+[INFO ] 2025-06-30 13:52:57.033 [main] UserSync - User already exists, skipping: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 13:52:57.053 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@763cf5b9
+[INFO ] 2025-06-30 13:52:57.055 [main] DBService - ✅ Event inserted: 00us64y2b4gxkuSfY697
+[INFO ] 2025-06-30 13:52:57.078 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@173797f0
+[INFO ] 2025-06-30 13:52:57.080 [main] UserSync - User already exists, skipping: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 13:52:57.106 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@5eed2d86
+[INFO ] 2025-06-30 13:52:57.108 [main] DBService - ✅ Event inserted: 00us8vxumnY8nC6Zb697
+[INFO ] 2025-06-30 13:52:57.130 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e141e42
+[INFO ] 2025-06-30 13:52:57.132 [main] UserSync - User already exists, skipping: againtesting1993@gmail.com
+[INFO ] 2025-06-30 13:52:57.155 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@73fc518f
+[INFO ] 2025-06-30 13:52:57.157 [main] DBService - ✅ Event inserted: 00us9pwpcru4OmDcD697
+[INFO ] 2025-06-30 13:52:57.178 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@2cc03cd1
+[INFO ] 2025-06-30 13:52:57.179 [main] UserSync - User already exists, skipping: test2testingokta@gmail.com
+[INFO ] 2025-06-30 13:52:57.199 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4e6f2bb5
+[INFO ] 2025-06-30 13:52:57.202 [main] DBService - ✅ Event inserted: 00us65er5oUJIbAu8697
+[INFO ] 2025-06-30 13:52:57.222 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1846579f
+[INFO ] 2025-06-30 13:52:57.224 [main] UserSync - User already exists, skipping: test1testingokta@gmail.com
+[INFO ] 2025-06-30 13:52:57.243 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@129bd55d
+[INFO ] 2025-06-30 13:52:57.246 [main] DBService - ✅ Event inserted: 00us65getdK37RHAR697
+[INFO ] 2025-06-30 13:52:57.248 [main] CommonUtil - Last Sync date is updated to 2025-06-30 13:52:57
+[INFO ] 2025-06-30 13:52:57.249 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 14:09:42.475 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 14:09:42.477 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 14:09:44.293 [main] UserSync - Total users fetched from Okta: 6
+[INFO ] 2025-06-30 14:09:44.630 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@3a095ec0
+[INFO ] 2025-06-30 14:09:44.781 [main] UserSync - User already exists, skipping: testing1okta@gmail.com
+[INFO ] 2025-06-30 14:09:44.800 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@760cf594
+[INFO ] 2025-06-30 14:09:44.809 [main] DBService - ✅ Event inserted: 00us9p9kxtMmaWiAv697
+[INFO ] 2025-06-30 14:09:44.833 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@165e389b
+[INFO ] 2025-06-30 14:09:44.835 [main] UserSync - User already exists, skipping: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 14:09:44.859 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@763cf5b9
+[INFO ] 2025-06-30 14:09:44.861 [main] DBService - ✅ Event inserted: 00us64y2b4gxkuSfY697
+[INFO ] 2025-06-30 14:09:44.888 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@173797f0
+[INFO ] 2025-06-30 14:09:44.890 [main] UserSync - User already exists, skipping: test3oktatesting@gmail.com
+[INFO ] 2025-06-30 14:09:44.908 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@5eed2d86
+[INFO ] 2025-06-30 14:09:44.910 [main] DBService - ✅ Event inserted: 00us8vxumnY8nC6Zb697
+[INFO ] 2025-06-30 14:09:44.930 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e141e42
+[INFO ] 2025-06-30 14:09:44.932 [main] UserSync - User already exists, skipping: againtesting1993@gmail.com
+[INFO ] 2025-06-30 14:09:44.952 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@73fc518f
+[INFO ] 2025-06-30 14:09:44.955 [main] DBService - ✅ Event inserted: 00us9pwpcru4OmDcD697
+[INFO ] 2025-06-30 14:09:44.974 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@2cc03cd1
+[INFO ] 2025-06-30 14:09:44.975 [main] UserSync - User already exists, skipping: test2testingokta@gmail.com
+[INFO ] 2025-06-30 14:09:44.994 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@4e6f2bb5
+[INFO ] 2025-06-30 14:09:44.996 [main] DBService - ✅ Event inserted: 00us65er5oUJIbAu8697
+[INFO ] 2025-06-30 14:09:45.016 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1846579f
+[INFO ] 2025-06-30 14:09:45.018 [main] UserSync - User already exists, skipping: test1testingokta@gmail.com
+[INFO ] 2025-06-30 14:09:45.033 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@129bd55d
+[INFO ] 2025-06-30 14:09:45.035 [main] DBService - ✅ Event inserted: 00us65getdK37RHAR697
+[INFO ] 2025-06-30 14:09:45.037 [main] CommonUtil - Last Sync date is updated to 2025-06-30 14:09:45
+[INFO ] 2025-06-30 14:09:45.038 [main] UserSync - ✅ User sync completed successfully.
+[INFO ] 2025-06-30 19:04:40.449 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq 
+[INFO ] 2025-06-30 19:04:40.450 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq , AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-06-30 19:04:41.402 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1b9ea3e3
+[INFO ] 2025-06-30 19:04:41.413 [main] DBService - lstSync Timestamp :: 2025-06-30 14:09:45
+[ERROR] 2025-06-30 19:04:41.518 [main] DBService - Exception in getUserList :: ORA-00972: identifier is too long
+
+[INFO ] 2025-06-30 19:04:41.553 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6331250e
+[INFO ] 2025-06-30 19:04:41.554 [main] DBService - lstSync Timestamp :: 2025-06-30 14:09:45
+[ERROR] 2025-06-30 19:04:41.557 [main] DBService - Exception in getUserList :: ORA-00972: identifier is too long
+
+[INFO ] 2025-06-30 21:37:23.430 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-06-30 21:37:23.433 [main] UserSync - Portal Env: dev
+[INFO ] 2025-06-30 21:37:23.433 [main] UserSync - Okta Env: prd
+[INFO ] 2025-06-30 21:37:23.918 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6d5620ce
+[INFO ] 2025-06-30 21:37:23.919 [main] DBService - Last Sync Timestamp: 2025-06-29 11:06:50
+[ERROR] 2025-06-30 21:37:23.921 [main] DBService - ❌ Error in fetchAndStoreEvents: URI is not absolute
+java.lang.IllegalArgumentException: URI is not absolute
+	at java.net.URL.of(URL.java:862) ~[?:?]
+	at java.net.URI.toURL(URI.java:1172) ~[?:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:57) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+[INFO ] 2025-06-30 21:37:23.927 [main] CommonUtil - Last Sync date is updated to 2025-06-30 21:37:23
+[INFO ] 2025-06-30 21:37:23.928 [main] UserSync - ✅ Sync complete. Last sync time updated.
+[INFO ] 2025-06-30 21:40:30.519 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-06-30 21:40:30.522 [main] UserSync - Portal Env: dev
+[INFO ] 2025-06-30 21:40:30.522 [main] UserSync - Okta Env: prd
+[INFO ] 2025-06-30 21:40:30.948 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6d5620ce
+[INFO ] 2025-06-30 21:40:30.960 [main] DBService - Last Sync Timestamp: 2025-06-30 21:37:23
+[ERROR] 2025-06-30 21:40:32.800 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.802 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.805 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.806 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.810 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.811 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.814 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.815 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.819 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.819 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.823 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.825 [main] DBService - ✅ Inserted event for user: againtesting1993@gmail.com
+[ERROR] 2025-06-30 21:40:32.828 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.829 [main] DBService - ✅ Inserted event for user: againtesting1993@gmail.com
+[ERROR] 2025-06-30 21:40:32.833 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.834 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.837 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.838 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.841 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.842 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.845 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.846 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.849 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.850 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.851 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.852 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.854 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.857 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.860 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.860 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.863 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.863 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.865 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.866 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.868 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.869 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:40:32.872 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.873 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.876 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.876 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.879 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.879 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.881 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.882 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:40:32.884 [main] DBService - ❌ Failed to insert event: ORA-00942: table or view does not exist
+
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:40:32.884 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 21:40:32.887 [main] CommonUtil - Last Sync date is updated to 2025-06-30 21:40:32
+[INFO ] 2025-06-30 21:40:32.888 [main] UserSync - ✅ Sync complete. Last sync time updated.
+[INFO ] 2025-06-30 21:43:02.342 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-06-30 21:43:02.345 [main] UserSync - Portal Env: dev
+[INFO ] 2025-06-30 21:43:02.345 [main] UserSync - Okta Env: prd
+[INFO ] 2025-06-30 21:43:02.742 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@6d5620ce
+[INFO ] 2025-06-30 21:43:02.751 [main] DBService - Last Sync Timestamp: 2025-06-30 21:40:32
+[ERROR] 2025-06-30 21:43:05.802 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.805 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.807 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.808 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.810 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.811 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.813 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.815 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.816 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.817 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.819 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.820 [main] DBService - ✅ Inserted event for user: againtesting1993@gmail.com
+[ERROR] 2025-06-30 21:43:05.823 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.825 [main] DBService - ✅ Inserted event for user: againtesting1993@gmail.com
+[ERROR] 2025-06-30 21:43:05.828 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.829 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.832 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.834 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.837 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.839 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.842 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.843 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.845 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.846 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.847 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.848 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.850 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.850 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.852 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.853 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.855 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.855 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.857 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.858 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.861 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.862 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[ERROR] 2025-06-30 21:43:05.865 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.866 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.868 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.868 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.870 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.870 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.873 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.874 [main] DBService - ✅ Inserted event for user: test3oktatesting@gmail.com
+[ERROR] 2025-06-30 21:43:05.876 [main] DBService - ❌ Failed to insert event: ORA-00904: "PROFILE_ID": invalid identifier
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1248) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:518) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:251) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1181) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1571) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1345) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3728) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3905) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3880) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:993) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvent(DBService.java:131) [classes/:?]
+	at com.aegis.portal.db.DBService.fetchAndStoreEvents(DBService.java:88) [classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:27) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "PROFILE_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	... 16 more
+[INFO ] 2025-06-30 21:43:05.877 [main] DBService - ✅ Inserted event for user: smanogaran@ciberspring.com
+[INFO ] 2025-06-30 21:43:05.879 [main] CommonUtil - Last Sync date is updated to 2025-06-30 21:43:05
+[INFO ] 2025-06-30 21:43:05.880 [main] UserSync - ✅ Sync complete. Last sync time updated.
+[INFO ] 2025-07-02 13:12:59.759 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 13:12:59.764 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 13:12:59.764 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 13:12:59.771 [main] OktaService - Error fetching events: no protocol: null/api/v1/logs?since=2025-06-29+11%3A06%3A50
+java.net.MalformedURLException: no protocol: null/api/v1/logs?since=2025-06-29+11%3A06%3A50
+	at java.net.URL.<init>(URL.java:772) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:66) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 13:12:59.783 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 15:17:52.291 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 15:17:52.295 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 15:17:52.295 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 15:17:52.299 [main] OktaService - Error fetching events: no protocol: null/api/v1/logs?since=2025-06-29+11%3A06%3A50
+java.net.MalformedURLException: no protocol: null/api/v1/logs?since=2025-06-29+11%3A06%3A50
+	at java.net.URL.<init>(URL.java:772) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:71) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 15:17:52.309 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 15:21:17.989 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 15:21:17.993 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 15:21:17.993 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 15:21:18.028 [main] OktaService - Error fetching events: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:567) ~[?:?]
+	at java.util.ResourceBundle.getString(ResourceBundle.java:523) ~[?:?]
+	at com.aegis.portal.okta.OktaService.getClient(OktaService.java:42) ~[classes/:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:68) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 15:21:18.041 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 15:38:22.023 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 15:38:22.028 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 15:38:22.028 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 15:38:22.034 [main] OktaService - Error fetching events: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:567) ~[?:?]
+	at java.util.ResourceBundle.getString(ResourceBundle.java:523) ~[?:?]
+	at com.aegis.portal.okta.OktaService.getClient(OktaService.java:42) ~[classes/:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:68) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 15:38:22.045 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 15:42:39.286 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 15:42:39.290 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 15:42:39.291 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 15:42:39.298 [main] OktaService - Error fetching events: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:567) ~[?:?]
+	at java.util.ResourceBundle.getString(ResourceBundle.java:523) ~[?:?]
+	at com.aegis.portal.okta.OktaService.getClient(OktaService.java:42) ~[classes/:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:68) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 15:42:39.308 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 16:04:18.314 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:04:18.318 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:04:18.319 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:04:18.325 [main] OktaService - Error fetching events: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key null.OrgUrl
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:567) ~[?:?]
+	at java.util.ResourceBundle.getString(ResourceBundle.java:523) ~[?:?]
+	at com.aegis.portal.okta.OktaService.getClient(OktaService.java:42) ~[classes/:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:68) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:43) ~[classes/:?]
+[ERROR] 2025-07-02 16:04:18.335 [main] DBService - Error inserting events: Error Initializing DB Connection: DBEnv is null or empty
+java.lang.Exception: Error Initializing DB Connection: DBEnv is null or empty
+	at com.aegis.portal.db.DBConnection.getConnection(DBConnection.java:29) ~[classes/:?]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:73) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:47) ~[classes/:?]
+[INFO ] 2025-07-02 16:06:47.167 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:06:47.171 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:06:47.172 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 16:06:47.178 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 16:06:48.975 [main] OktaService - Error fetching events: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?since=2025-06-29+11%3A06%3A50
+java.io.IOException: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?since=2025-06-29+11%3A06%3A50
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2013) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:79) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:06:49.419 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@557286ad
+[INFO ] 2025-07-02 16:06:49.499 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 16:15:01.213 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:15:01.217 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:15:01.218 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:15:01.259 [main] OktaService - Error fetching events: no protocol: null/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+java.net.MalformedURLException: no protocol: null/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+	at java.net.URL.<init>(URL.java:772) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:78) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:15:01.646 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1fb19a0
+[INFO ] 2025-07-02 16:15:01.730 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 16:15:53.879 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:15:53.883 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:15:53.883 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:15:53.894 [main] OktaService - Error fetching events: no protocol: null/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+java.net.MalformedURLException: no protocol: null/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+	at java.net.URL.<init>(URL.java:772) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:78) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:15:54.276 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1fb19a0
+[INFO ] 2025-07-02 16:15:54.354 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 16:17:06.856 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:17:06.860 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:17:06.861 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:17:08.262 [main] OktaService - Error fetching events: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+java.io.IOException: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs?since=2025-06-29T05%3A36%3A50Z
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2013) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:84) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:17:08.606 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e886a5b
+[INFO ] 2025-07-02 16:17:08.680 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 16:17:52.174 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:17:52.178 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:17:52.178 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:17:53.692 [main] OktaService - Error fetching events: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs?since=
+java.io.IOException: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs?since=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2013) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:84) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:17:54.035 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e886a5b
+[INFO ] 2025-07-02 16:17:54.112 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 16:18:26.375 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 16:18:26.380 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 16:18:26.380 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 16:18:27.894 [main] OktaService - Error fetching events: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs
+java.io.IOException: Server returned HTTP response code: 401 for URL: https://trial-6355671.okta.com/api/v1/logs
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2013) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at com.aegis.portal.okta.OktaService.fetchEvents(OktaService.java:84) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:41) ~[classes/:?]
+[INFO ] 2025-07-02 16:18:28.247 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@1e886a5b
+[INFO ] 2025-07-02 16:18:28.316 [main] DBService - Inserted 0 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:22:37.385 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:22:37.391 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:22:37.391 [main] UserSync - Okta Env: prd
+[ERROR] 2025-07-02 19:22:37.395 [main] OktaService - Error fetching events from Okta: URI is not absolute
+[INFO ] 2025-07-02 19:22:37.395 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:25:21.201 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:25:21.205 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:25:21.206 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:25:21.210 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 19:25:23.158 [main] OktaService - Error fetching events from Okta: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?filter=eventType+eq+%22user.session.start%22+or+eventType+eq+%22user.session.end%22+or+eventType+eq+%22user.account.activated%22+or+eventType+eq+%22user.account.deactivated%22&since=2025-06-29+11%3A06%3A50
+[INFO ] 2025-07-02 19:25:23.160 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:29:46.184 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:29:46.187 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:29:46.188 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:29:46.220 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:29:48.981 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@692fd26
+[ERROR] 2025-07-02 19:29:49.254 [main] DBService - Error inserting events: ORA-00933: SQL command not properly ended
+
+java.sql.BatchUpdateException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.OraclePreparedStatement.generateBatchUpdateException(OraclePreparedStatement.java:10041) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatchWithoutQueue(OraclePreparedStatement.java:9803) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeBatch(OraclePreparedStatement.java:9677) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeBatch(OracleStatement.java:4963) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:285) ~[ojdbc8-23.2.0.0.jar:23.2.0.0.0]
+	at com.aegis.portal.db.DBService.insertEvents(DBService.java:86) ~[classes/:?]
+	at com.aegis.portal.migration.UserSync.main(UserSync.java:44) ~[classes/:?]
+[INFO ] 2025-07-02 19:29:49.268 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:29:49
+[INFO ] 2025-07-02 19:31:47.632 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:31:47.636 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:31:47.637 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:31:47.642 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 19:31:49.333 [main] OktaService - Error fetching events from Okta: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?filter=eventType+eq+%22user.session.start%22+or+eventType+eq+%22user.session.end%22+or+eventType+eq+%22user.account.activated%22+or+eventType+eq+%22user.account.deactivated%22&since=2025-07-02+19%3A29%3A49
+[INFO ] 2025-07-02 19:31:49.334 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:32:43.312 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:32:43.318 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:32:43.318 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:32:43.324 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:32:45.481 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@692fd26
+[INFO ] 2025-07-02 19:32:45.711 [main] DBService - Inserted 1 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:32:45.713 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:32:45
+[INFO ] 2025-07-02 19:40:41.301 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:40:41.304 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:40:41.304 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:40:41.311 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 19:40:43.081 [main] OktaService - Error fetching events from Okta: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?filter=eventType+eq+%22user.session.start%22+or+eventType+eq+%22user.session.end%22+or+eventType+eq+%22user.account.activated%22+or+eventType+eq+%22user.account.deactivated%22&since=2025-07-02+19%3A32%3A45
+[INFO ] 2025-07-02 19:40:43.082 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:41:48.158 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:41:48.162 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:41:48.163 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:41:48.167 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:41:50.435 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@692fd26
+[INFO ] 2025-07-02 19:41:50.650 [main] DBService - Inserted 1 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:41:50.652 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:41:50
+[INFO ] 2025-07-02 19:55:46.760 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:55:46.764 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:55:46.765 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:55:46.793 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 19:55:48.863 [main] OktaService - Error fetching events from Okta: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?filter=eventType+eq+%22user.session.start%22+or+eventType+eq+%22user.session.end%22+or+eventType+eq+%22user.account.activated%22+or+eventType+eq+%22user.account.deactivated%22&since=2025-07-02+19%3A41%3A50
+[INFO ] 2025-07-02 19:55:48.864 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:56:40.489 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:56:40.494 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:56:40.495 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:56:40.500 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:56:42.564 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-02 19:56:42.768 [main] DBService - Inserted 4 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:56:42.771 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:56:42
+[INFO ] 2025-07-02 19:57:05.739 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:57:05.744 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:57:05.745 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:57:05.750 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[ERROR] 2025-07-02 19:57:07.406 [main] OktaService - Error fetching events from Okta: Server returned HTTP response code: 400 for URL: https://trial-6355671.okta.com/api/v1/logs?filter=eventType+eq+%22user.session.start%22+or+eventType+eq+%22user.session.end%22+or+eventType+eq+%22user.account.activated%22+or+eventType+eq+%22user.account.deactivated%22&since=2025-07-02+19%3A56%3A42
+[INFO ] 2025-07-02 19:57:07.407 [main] UserSync - No new events fetched.
+[INFO ] 2025-07-02 19:57:36.464 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:57:36.468 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:57:36.469 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:57:36.473 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:57:38.602 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-02 19:57:38.843 [main] DBService - Inserted 4 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:57:38.845 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:57:38
+[INFO ] 2025-07-02 19:59:38.851 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 19:59:38.855 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 19:59:38.855 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 19:59:38.860 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 19:59:40.949 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@38eb2c50
+[INFO ] 2025-07-02 19:59:41.182 [main] DBService - Inserted 6 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 19:59:41.185 [main] CommonUtil - Last Sync date is updated to 2025-07-02 19:59:41
+[INFO ] 2025-07-02 20:13:46.951 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 20:13:46.956 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-02 20:13:46.957 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 20:13:46.963 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 20:13:49.013 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-02 20:13:49.235 [main] DBService - Inserted 7 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 20:13:49.237 [main] CommonUtil - Last Sync date is updated to 2025-07-02 20:13:49
+[INFO ] 2025-07-02 20:39:02.693 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 20:39:02.699 [main] UserSync - Portal Env: prd
+[INFO ] 2025-07-02 20:39:02.700 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 20:39:02.706 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 20:39:04.777 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-02 20:39:05.055 [main] DBService - Inserted 8 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 20:39:05.058 [main] CommonUtil - Last Sync date is updated to 2025-07-02 20:39:05
+[INFO ] 2025-07-02 20:48:10.956 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-02 20:48:10.960 [main] UserSync - Portal Env: prd
+[INFO ] 2025-07-02 20:48:10.961 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-02 20:48:10.965 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-02 20:48:13.060 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-02 20:48:13.269 [main] DBService - Inserted 8 events into DSS_DPS_EVENT
+[INFO ] 2025-07-02 20:48:13.272 [main] CommonUtil - Last Sync date is updated to 2025-07-02 20:48:13
+[INFO ] 2025-07-03 11:20:14.212 [main] UserSync - === Aegis User and Event Sync ===
+[INFO ] 2025-07-03 11:20:14.216 [main] UserSync - Portal Env: dev
+[INFO ] 2025-07-03 11:20:14.216 [main] UserSync - Okta Env: prd
+[INFO ] 2025-07-03 11:20:14.220 [main] OktaService - oktaURL = https://trial-6355671.okta.com, TokenCredentials = 00dHebEq8N51PNzOXIevshuOVlr-O6KnP6J7FxNrqq, AEGISlinkAppID = 0oas65pry3i2vgvpb697
+[INFO ] 2025-07-03 11:20:16.756 [main] DBConnection - DB Connection = oracle.jdbc.driver.T4CConnection@8bffb8b
+[INFO ] 2025-07-03 11:20:16.989 [main] DBService - Inserted 8 events into DSS_DPS_EVENT
+[INFO ] 2025-07-03 11:20:16.992 [main] CommonUtil - Last Sync date is updated to 2025-07-03 11:20:16
